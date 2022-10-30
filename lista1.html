@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 1</title>
+</head>
+<body>
+    <script>
+//Atividade 1
+let nota1 = parseFloat(prompt('Digite a primeira nota: '))
+let nota2 = parseFloat(prompt('Digite a segunda nota: '))
+let media = (nota1 + nota2) / 2
+if(media >= 6){
+    alert('Aluno aprovado.')
+}else{
+    alert('O aluno precisa de recuperação.')
+    let nota3 = parseFloat(prompt('Digite a nota da recuperação:'))
+    let novaMedia = (media + nota3) / 2
+if(novaMedia >= 6){
+    alert('Aluno aprovado')
+}else{
+    alert('Aluno reprovado!')
+}
+}
+
+//Atividade 2
+let n = parseFloat(prompt('Digite um número:'))
+
+if(n > 0){
+    alert('Número Positivo')
+}else if(n < 0){
+    alert('Número Negativo')
+}else{
+    alert('Número igual a zero')
+}
+
+// Atividade 3
+let n1 = parseFloat(prompt('Digite um número:'))
+let n2 = parseFloat(prompt('Digite outro número:'))
+
+if(n1 > n2){
+    alert(n1)
+}else if(n2 > n1){
+    alert(n2)
+}else{
+    alert('Os números são iguais')
+}
+
+// Atividade 4
+let sex = prompt("Qual é o seu sexo? Digite 'M' para masculino e 'F' para feminino.")
+
+if(sex == 'm' || sex == 'M'){
+    alert('Você é homem!')
+}else if(sex == 'f' || sex == 'F'){
+    alert('Você é mulher!')
+}else{
+    alert('Sexo inválido!')
+}
+
+// Atividade 5
+let idade = parseFloat(prompt('Digite sua idade:'))
+
+if(idade <= 10){
+    alert('Categoria Infantil')
+}else if(idade <= 13){
+    alert('Categoria Infanto-Juvenil')
+}else if(idade <= 18){
+    alert('Categoria Juvenil')
+}else{
+    alert('Categoria Adulto')
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 2</title>
+</head>
+<body>
+    <script>
+// Atividade 1
+let num = parseFloat(prompt('Digite um número'))
+if (num >= 0 && num <= 25) {
+            alert("O número está no intervalo [0,25].")
+        } else if (num > 25 && num <= 50) {
+            alert("O número está no intervalo (25,50].")
+        } else if (num > 50 && num <= 75) {
+            alert("O número está no intervalo (50,75].")
+        } else if (num > 75 && num <= 100) {
+            alert("O número está no intervalo de (75,100].")
+        } else {
+            alert("Fora de intervalo.")
+        }
+
+// Atividade 2
+let n1 = parseFloat(prompt('Digite um número'))
+let n2 = parseFloat(prompt('Digite outro número'))
+
+if(n1 % n2 == 0){
+    alert('São múltiplos.')
+}else if(n2 % n1 == 0){
+    alert('São múltiplos.')
+}else{
+    alert('Não são múltiplos.')
+}
+    
+// Atividade 3
+var salario, novoSalario, reajuste
+salario = parseFloat(prompt('Insira seu salário atual:'))
+
+if(salario > 0 && salario <= 400){
+    reajuste = salario * 0.15
+    novoSalario = salario + reajuste
+   alert('Novo salário: R$' + novoSalario + '\nReajuste ganho: R$' + reajuste)
+}else if(salario > 400 && salario <= 800){
+    reajuste = salario * 0.12
+    novoSalario = salario + reajuste
+    alert('Novo salário: R$' + novoSalario + '\nReajuste ganho: R$' + reajuste)
+}else if(salario > 800 && salario <= 1200){
+    reajuste = salario * 0.10
+    novoSalario = salario + reajuste
+    alert('Novo salário: R$' + novoSalario, '\nReajuste ganho: R$' + reajuste)
+}else if(salario > 1200 && salario <= 2000){
+    reajuste = salario * 0.07
+    novoSalario = salario + reajuste
+    alert('Novo salário: R$' + novoSalario + '\nReajuste ganho: R$' + reajuste)
+}else if(salario > 2000){
+    reajuste = salario * 0.04
+    novoSalario = salario + reajuste
+    alert('Novo salário: R$' + novoSalario + '\nReajuste ganho: R$' + reajuste)
+}else{
+    alert('Salário inválido.')
+}
+
+// Atividade 4
+var h1, h2, total
+h1 = parseFloat(prompt('Insira a hora do início do jogo:'))
+h2 = parseFloat(prompt('Insira a hora do final do jogo:'))
+
+if(h2 > h1){
+    total = h2 - h1
+}else{
+    total = (24 - h1) + h2
+}
+alert('O jogo durou '+ total + ' hora(s)')
+
+// Atividade 5
+var filo, classe, ali
+filo = prompt('O animal é vertebrado ou invertebrado?')
+classe = prompt('Qual a classe do animal (mamífero, ave, inseto ou anelídeo)?')
+ali = prompt('Qual é a alimentação do animal (carnívoro, herbívoro, onívoro ou hematófago)?')
+
+if (filo == "vertebrado" && classe == "ave" && ali == "carnívoro") {
+            alert("Seu animal é a águia.")
+        } else if (filo == "vertebrado" && classe == "ave" && ali == "onívoro") {
+            alert("Seu animal é o pombo.")
+        } else if (filo == "vertebrado" && classe == "mamífero" && ali == "onívoro") {
+            alert("Seu animal é o ser humano.")
+        } else if (filo == "vertebrado" && classe == "mamífero" && ali == "herbívoro") {
+            alert("Seu animal é a vaca.")
+        } else if (filo == "invertebrado" && classe == "inseto" && ali == "hematófago") {
+            alert("Seu animal é a pulga.")
+        } else if (filo == "invertebrado" && classe == "inseto" && ali == "herbívoro") {
+            alert("Seu animal é a lagarta.")
+        } else if (filo == "invertebrado" && classe == "anelídeo" && ali == "hematófago") {
+            alert("Seu animal é a sanguessuga.")
+        } else if (filo == "invertebrado" && classe == "anelídeo" && ali == "onívoro") {
+            alert("Seu animal é a minhoca.")
+        } else {
+            alert("Erro, verifique se você digitou corretamente.")
+        }
+    </script>
+</body>
+</html>
